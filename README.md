@@ -1,4 +1,12 @@
-# buzzline-02-case
+# buzzline-02-gjrich
+
+This repository has been forked from Dr. Case' repository as part of the NWMS Streaming Data Course for the Masters of Science in Data Analy
+
+I have customized this script to generate psuedo-data on stock prices with a kafka producer script. I have also customized the kafka consumer script to alert if the price crosses a number of thresholds.
+
+The ticker symbol and initial stock price are customizable in the producer script.
+
+# Starting Info
 
 Streaming data is often too big for any one machine. 
 A streaming platform helps organize our pipelines.
@@ -55,13 +63,13 @@ Use the commands below to activate .venv, and start the producer.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m producers.kafka_producer_case
+py -m producers.kafka_producer_gjrich
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.kafka_producer_case
+python3 -m producers.kafka_producer_gjrich
 ```
 
 ## Task 5. Start a Kafka Consumer
@@ -74,13 +82,13 @@ Use the commands below to activate .venv, and start the consumer.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.kafka_consumer_case
+py -m consumers.kafka_consumer_gjrich
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.kafka_consumer_case
+python3 -m consumers.kafka_consumer_gjrich
 ```
 
 ## Later Work Sessions
